@@ -1,0 +1,18 @@
+apply plugin: 'ear'
+apply plugin: 'java'
+apply plugin: 'war'
+
+group = 'com.mauro2357.pruebas'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	deploy project(path:':ServiciosWebJava', configuration:'archives')	
+}
+
+ear (){
+    appDirName 'src/main/application'
+    libDirName 'APP-INF/lib'  
+}
