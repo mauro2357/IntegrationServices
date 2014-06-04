@@ -6,7 +6,7 @@ import javax.jws.WebService;
 
 @Stateless
 @WebService
-public class HelloWorld {
+public class HelloWorldSoap {
 
 	@WebMethod(operationName="saludar")
 	public String saludar(){
